@@ -26,6 +26,8 @@ namespace NDEngenharia.Core.Entities
             this.Nome = Nome;
             this.Telefone = Telefone;
             this.Endereco = new Endereco(Logradouro, Numero, CEP, Referencia);
+
+            this.ValidarEntity();
         }
 
         public void ValidarEntity()

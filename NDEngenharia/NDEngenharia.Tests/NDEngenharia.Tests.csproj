@@ -82,6 +82,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\HomeControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
@@ -92,6 +93,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NDEngenharia.Core\NDEngenharia.Core.csproj">
+      <Project>{6852B2D0-A6F3-4569-AFA6-073B1CB03F7E}</Project>
+      <Name>NDEngenharia.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NDEngenharia\NDEngenharia.csproj">
       <Project>{81B96FA6-468A-4CD5-8365-6392041BAFCD}</Project>
       <Name>NDEngenharia</Name>
