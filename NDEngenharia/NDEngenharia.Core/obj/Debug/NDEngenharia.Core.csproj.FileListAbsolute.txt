@@ -1,0 +1,4 @@
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\bin\Debug\NDEngenharia.Core.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\bin\Debug\NDEngenharia.Core.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\obj\Debug\NDEngenharia.Core.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\obj\Debug\NDEngenharia.Core.pdb

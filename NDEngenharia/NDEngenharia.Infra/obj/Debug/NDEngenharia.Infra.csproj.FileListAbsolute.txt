@@ -1,0 +1,14 @@
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\NDEngenharia.Infra.dll.config
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\NDEngenharia.Infra.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\NDEngenharia.Infra.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\EntityFramework.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\NDEngenharia.Core.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\NDEngenharia.Core.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\EntityFramework.xml
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\obj\Debug\NDEngenharia.Infra.csprojResolveAssemblyReference.cache
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\obj\Debug\NDEngenharia.Infra.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\obj\Debug\NDEngenharia.Infra.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\obj\Debug\NDEngenharia.Infra.Migrations.FirstMigration.resources
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Infra\obj\Debug\NDEngenharia.Infra.csproj.GenerateResource.Cache
