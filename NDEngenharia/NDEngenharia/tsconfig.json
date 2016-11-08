@@ -4,6 +4,7 @@
     "noEmitOnError": true,
     "sourceMap": true,
     "target": "es5",
+    "module": "amd",
     "outDir": "./Scripts/App"
   },
   "include": [

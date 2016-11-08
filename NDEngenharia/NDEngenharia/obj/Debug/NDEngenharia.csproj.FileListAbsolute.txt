@@ -185,3 +185,14 @@ C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\N
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Common.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Mvc.xml
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\NDEngenharia.Core.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\NDEngenharia.Infra.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Common.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Mvc.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\WebActivatorEx.dll
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\NDEngenharia.Core.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\NDEngenharia.Infra.pdb
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.xml
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Common.xml
+C:\Users\Ivia\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Mvc.xml

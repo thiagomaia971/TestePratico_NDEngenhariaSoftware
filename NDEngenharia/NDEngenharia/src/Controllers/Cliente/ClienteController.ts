@@ -1,13 +1,17 @@
-﻿import { UnitOfWork } from "../../Repositories/UnitOfWork";
+﻿//import { UnitOfWork } from "../../Repositories/UnitOfWork";
 
-export class ClienteController {
-    private unitOfWork: UnitOfWork;
+class ClienteController {
+
+    //private unitOfWork: UnitOfWork;
 
     constructor() {
-        this.unitOfWork = new UnitOfWork();
         console.log("carregou o CLienteController");
+       // this.unitOfWork = new UnitOfWork();
     }
 
-
+    public click(): void {
+        console.log("tes");
+        alert("asdas");
+    }
 
 }

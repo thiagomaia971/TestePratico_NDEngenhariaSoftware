@@ -1,11 +1,14 @@
-"use strict";
-var UnitOfWork_1 = require("../../Repositories/UnitOfWork");
+//import { UnitOfWork } from "../../Repositories/UnitOfWork";
 var ClienteController = (function () {
+    //private unitOfWork: UnitOfWork;
     function ClienteController() {
-        this.unitOfWork = new UnitOfWork_1.UnitOfWork();
         console.log("carregou o CLienteController");
+        // this.unitOfWork = new UnitOfWork();
     }
+    ClienteController.prototype.click = function () {
+        console.log("tes");
+        alert("asdas");
+    };
     return ClienteController;
 }());
-exports.ClienteController = ClienteController;
 //# sourceMappingURL=ClienteController.js.map

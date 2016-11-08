@@ -6,8 +6,11 @@
 
 <h2>Index</h2>
 
+<button onclick="click()">Clickar</button>
+
 @section scripts{
 
-    <script src="~/Scripts/require.js" data-main="/Scripts/App/Controllers/Cliente/ClienteController"></script>
+    @*<script src="~/Scripts/App/Controllers/Cliente/ClienteController.js"></script>*@
+    <script src="~/Scripts/require.js" data-main="@Url.Content("~/Scripts/App/Controllers/Cliente/ClienteController.js")" defer></script>
 
 }

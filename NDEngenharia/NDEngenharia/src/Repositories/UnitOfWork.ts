@@ -7,6 +7,7 @@ export class UnitOfWork {
     public Clientes: ClienteRepository;
 
     constructor() {
+        console.log("test - unitofwork");
         this.Clientes = new ClienteRepository(this._url);
     }
 
