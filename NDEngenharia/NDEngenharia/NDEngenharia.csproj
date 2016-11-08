@@ -249,11 +249,21 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\Controllers\Cliente\ClienteController.js" />
+    <Content Include="Scripts\App\Entities\Cliente.js" />
+    <Content Include="Scripts\App\Repositories\ClienteRepository.js" />
+    <Content Include="Scripts\App\Repositories\IRepository.js" />
+    <Content Include="Scripts\App\Repositories\UnitOfWork.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\App\Entities\Cliente.js.map" />
+    <Content Include="Scripts\App\Repositories\ClienteRepository.js.map" />
+    <Content Include="Scripts\App\Repositories\IRepository.js.map" />
+    <Content Include="Scripts\App\Repositories\UnitOfWork.js.map" />
+    <Content Include="Scripts\App\Controllers\Cliente\ClienteController.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -268,6 +278,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require-setup.js" />
+    <Content Include="Scripts\require.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -307,10 +320,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="src\Controllers\Cliente\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -334,6 +347,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="src\Controllers\Cliente\ClienteController.ts" />
     <TypeScriptCompile Include="src\Entities\Cliente.ts" />
     <TypeScriptCompile Include="src\Repositories\ClienteRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\IRepository.ts" />

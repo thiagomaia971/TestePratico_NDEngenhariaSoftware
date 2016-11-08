@@ -2,7 +2,7 @@
 import { IRepository } from "./IRepository";
 import { Cliente } from "../Entities/Cliente";
 
-export class ClienteRepository /*extends IRepository<Cliente>*/{
+export class ClienteRepository /*extends IRepository<Cliente>*/ {
 
     private url: string;
 
@@ -13,14 +13,30 @@ export class ClienteRepository /*extends IRepository<Cliente>*/{
 
 
     public getAll(): JQueryPromise<Array<Cliente>> {
-        this.url = `${this.url}/Cliente/Todos`;
+        let _url: string = `${this.url}/Cliente/Todos`;
 
-        return $.getJSON(this.url);
+        return $.getJSON(_url);
 
     }
-    /*
-    public getSingle(id: number): JQueryPromise<Cliente>{
-        this.url = `${this.url}/Cliente/`
-    }*/
+
+    public getSingle(id: number): JQueryPromise<Cliente> {
+        let _url: string = `${this.url}/Cliente/Filtrar`;
+
+        return $.ajax({
+            method: "POST",
+            url: _url,
+            data: { id }
+        });
+    }
+
+    public add(cliente: Cliente): JQueryPromise<Cliente> {
+        let _url: string= `${this.url}/Cliente/Criar`;
+
+        return $.ajax({
+            method: "POST",
+            url: _url,
+            data: { cliente }
+        })
+    }
 
 }

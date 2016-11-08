@@ -21,7 +21,7 @@ namespace NDEngenharia.Api
             this.UnitOfWork = UnitOfWork;
         }
 
-        [Route("/Cliente/Todos")]
+        [Route("Cliente/Todos")]
         [HttpGet]
         public IHttpActionResult TodosClientes()
         {
@@ -30,7 +30,7 @@ namespace NDEngenharia.Api
             return Ok(clientesCadastrados);
         }
 
-        [Route("/Cliente/Criar")]
+        [Route("Cliente/Criar")]
         [HttpPost]
         public IHttpActionResult CriarCliente(Cliente clienteVM)
         {
@@ -51,6 +51,17 @@ namespace NDEngenharia.Api
                 });
             }
             
+        }
+
+        [Route("Cliente/Filtrar")]
+        [HttpPost]
+        public IHttpActionResult Filtrar(int id)
+        {
+            Cliente cliente = this.UnitOfWork.Clientes.GetSingle(id);
+            if (cliente != null)
+                return Ok(cliente);
+
+            return NotFound();
         }
 
     }
