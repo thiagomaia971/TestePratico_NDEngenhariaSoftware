@@ -1,0 +1,8 @@
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Entities\Cliente.js
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Entities\Cliente.js.map
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\IRepository.js
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\IRepository.js.map
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\ClienteRepository.js
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\ClienteRepository.js.map
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\UnitOfWork.js
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\src\Repositories\UnitOfWork.js.map
