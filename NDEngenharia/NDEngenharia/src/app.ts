@@ -3,11 +3,9 @@
 $(document).ready(function () {
     var clienteController: ClienteController = new ClienteController();
 
-    $("#Nome").on("keyup", function () {
+    $("#NomeSearch").on("keyup", function () {
+        clienteController.nameSearch = $(this).val();
         clienteController.carregarClientes();
     });
-    /*$("#test").on("click", function () {
-        clienteController.click();
-    });*/
-
+    
 });

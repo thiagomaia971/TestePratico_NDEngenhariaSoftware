@@ -17,6 +17,11 @@ export class ClienteRepository {
 
     }
 
+    public getAllByName(nome: string): JQueryPromise<Array<Cliente>> {
+        let _url: string = `${this.url}/Cliente/Todos/${nome}`;
+        return $.getJSON(_url);
+    }
+
     public getSingle(id: number): JQueryPromise<Cliente> {
         let _url: string = `${this.url}/Cliente/Filtrar`;
 

@@ -357,8 +357,8 @@
     <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\Controllers\Cliente\ClienteController.ts" />
-    <TypeScriptCompile Include="src\Controllers\Cliente\ClienteHome.ts" />
     <TypeScriptCompile Include="src\Entities\Cliente.ts" />
+    <TypeScriptCompile Include="src\Entities\Endereco.ts" />
     <TypeScriptCompile Include="src\Repositories\ClienteRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\IRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\UnitOfWork.ts" />

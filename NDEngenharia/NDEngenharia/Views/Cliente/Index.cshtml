@@ -17,7 +17,7 @@
 
             <div class="col-md-6 col-md-offset-3">
                 @Html.Label("Pesquisar pelo Nome", new { @for = "Nome" })
-                @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+                @Html.TextBox("NomeSearch", "", new { @class = "form-control", id = "NomeSearch" })
 
             </div>
 
@@ -38,6 +38,7 @@
                 <th>Numero</th>
                 <th>CEP</th>
                 <th>Referencia</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody id="clientesBody">
@@ -50,8 +51,6 @@
 
     <div class="panel-footer">Panel footer</div>
 </div>
-
-<button onclick="click()">Clickar</button>
 
 @section scripts{
 

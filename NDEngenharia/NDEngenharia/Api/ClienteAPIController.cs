@@ -16,7 +16,7 @@ namespace NDEngenharia.Api
     {
 
         private IUnitOfWork UnitOfWork { get; set; }
-         
+
         public ClienteAPIController(IUnitOfWork UnitOfWork)
         {
             this.UnitOfWork = UnitOfWork;
@@ -28,11 +28,27 @@ namespace NDEngenharia.Api
         {
             IEnumerable<Cliente> clientesCadastrados = this.UnitOfWork.Clientes.GetAll();
 
+            if (clientesCadastrados.Count() == 0)
+                return NotFound();
+
             return Ok(clientesCadastrados);
         }
 
+        [HttpGet]
+        [Route("api/Cliente/Todos/{nome}")]
+        public IHttpActionResult TodosClientes(string nome)
+        {
+            IEnumerable<Cliente> clientesCadastrados = this.UnitOfWork.Clientes.GetAll(x => x.Nome.ToLower().Contains(nome));
+
+            if (clientesCadastrados.Count() == 0)
+                return NotFound();
+
+            return Ok(clientesCadastrados);
+
+        }
+
         [HttpPost]
-        [Route("Cliente/Criar")]
+        [Route("api/Cliente/Criar")]
         public IHttpActionResult CriarCliente(Cliente clienteVM)
         {
             try
@@ -46,16 +62,17 @@ namespace NDEngenharia.Api
             }
             catch (RoleViolationException e)
             {
-                return Content(HttpStatusCode.BadRequest, new {
+                return Content(HttpStatusCode.BadRequest, new
+                {
                     message = e.Message,
                     propertyExcepted = e.PropertyNameExcepted
                 });
             }
-            
+
         }
 
         [HttpPost]
-        [Route("Cliente/Filtrar")]
+        [Route("api/Cliente/Filtrar")]
         public IHttpActionResult Filtrar(int id)
         {
             Cliente cliente = this.UnitOfWork.Clientes.GetSingle(id);
@@ -64,6 +81,7 @@ namespace NDEngenharia.Api
 
             return NotFound();
         }
+
 
     }
 }

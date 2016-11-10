@@ -8,6 +8,10 @@ define(["require", "exports"], function (require, exports) {
             var _url = this.url + "/Cliente/Todos";
             return $.getJSON(_url);
         };
+        ClienteRepository.prototype.getAllByName = function (nome) {
+            var _url = this.url + "/Cliente/Todos/" + nome;
+            return $.getJSON(_url);
+        };
         ClienteRepository.prototype.getSingle = function (id) {
             var _url = this.url + "/Cliente/Filtrar";
             return $.ajax({

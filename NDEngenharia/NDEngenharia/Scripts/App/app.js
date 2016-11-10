@@ -2,12 +2,10 @@ define(["require", "exports", "./Controllers/Cliente/ClienteController"], functi
     "use strict";
     $(document).ready(function () {
         var clienteController = new ClienteController_1.ClienteController();
-        $("#Nome").on("keyup", function () {
+        $("#NomeSearch").on("keyup", function () {
+            clienteController.nameSearch = $(this).val();
             clienteController.carregarClientes();
         });
-        /*$("#test").on("click", function () {
-            clienteController.click();
-        });*/
     });
 });
 //# sourceMappingURL=app.js.map
