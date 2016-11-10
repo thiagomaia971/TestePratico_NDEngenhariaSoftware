@@ -1,13 +1,58 @@
-﻿
+﻿@model NDEngenharia.Models.ClienteViewModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <h4>Controle de Cliente</h4>
+    </div>
+
+    <div class="panel-body">
+
+        <section id="section-pesquisa">
+
+            <div class="col-md-6 col-md-offset-3">
+                @Html.Label("Pesquisar pelo Nome", new { @for = "Nome" })
+                @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+
+            </div>
+
+            <button class="btn btn-success" style="margin-top: 23px">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+
+        </section>
+
+    </div>
+
+    <table id="clientesTable" class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Logradouro</th>
+                <th>Numero</th>
+                <th>CEP</th>
+                <th>Referencia</th>
+            </tr>
+        </thead>
+        <tbody id="clientesBody">
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="panel-footer">Panel footer</div>
+</div>
 
 @section scripts{
 
-    <script src="~/Scripts/require.js" data-main="/Scripts/App/Controllers/Cliente/ClienteController"></script>
+    <script src="~/Scripts/require.js" data-main="/Scripts/App/app.js"></script>
 
 }
