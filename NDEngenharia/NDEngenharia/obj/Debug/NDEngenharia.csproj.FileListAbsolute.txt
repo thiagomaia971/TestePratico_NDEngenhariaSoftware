@@ -185,3 +185,5 @@ C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\N
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Common.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.Mvc.xml
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.WebApi.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia\bin\Ninject.Web.WebApi.xml

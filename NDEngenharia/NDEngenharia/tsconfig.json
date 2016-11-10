@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noEmitOnError": true,
     "sourceMap": true,
+    "module": "amd",
     "target": "es5",
     "outDir": "./Scripts/App"
   },

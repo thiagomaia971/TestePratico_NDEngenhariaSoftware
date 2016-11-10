@@ -1,13 +1,11 @@
 ﻿/// <reference path="../../Scripts/jquery.d.ts" />
-import { IRepository } from "./IRepository";
 import { Cliente } from "../Entities/Cliente";
 
-export class ClienteRepository /*extends IRepository<Cliente>*/ {
+export class ClienteRepository {
 
     private url: string;
 
     constructor(url: string) {
-        //super();
         this.url = url;
     }
 

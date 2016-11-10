@@ -11,18 +11,19 @@ using System.Web.Http;
 
 namespace NDEngenharia.Api
 {
+    [AllowAnonymous]
     public class ClienteAPIController : ApiController
     {
 
         private IUnitOfWork UnitOfWork { get; set; }
-
+         
         public ClienteAPIController(IUnitOfWork UnitOfWork)
         {
             this.UnitOfWork = UnitOfWork;
         }
 
-        [Route("Cliente/Todos")]
         [HttpGet]
+        [Route("api/Cliente/Todos")]
         public IHttpActionResult TodosClientes()
         {
             IEnumerable<Cliente> clientesCadastrados = this.UnitOfWork.Clientes.GetAll();
@@ -30,8 +31,8 @@ namespace NDEngenharia.Api
             return Ok(clientesCadastrados);
         }
 
-        [Route("Cliente/Criar")]
         [HttpPost]
+        [Route("Cliente/Criar")]
         public IHttpActionResult CriarCliente(Cliente clienteVM)
         {
             try
@@ -53,8 +54,8 @@ namespace NDEngenharia.Api
             
         }
 
-        [Route("Cliente/Filtrar")]
         [HttpPost]
+        [Route("Cliente/Filtrar")]
         public IHttpActionResult Filtrar(int id)
         {
             Cliente cliente = this.UnitOfWork.Clientes.GetSingle(id);

@@ -11,7 +11,9 @@ namespace NDEngenharia.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using Core.Repositories;
+    using System.Web.Http;
     using Infra.Repositories;
+    using Infra;
 
     public static class NinjectWebCommon 
     {
@@ -42,6 +44,7 @@ namespace NDEngenharia.App_Start
         private static IKernel CreateKernel()
         {
             var kernel = new StandardKernel();
+            GlobalConfiguration.Configuration.DependencyResolver = kernel.Get<System.Web.Http.Dependencies.IDependencyResolver>();
             try
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
@@ -63,9 +66,10 @@ namespace NDEngenharia.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
-            kernel.Bind<IClienteRepository>().To<ClienteRepository>().InSingletonScope();
+            kernel.Bind<IClienteRepository>().To<ClienteRepository>().InRequestScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
 
+            kernel.Bind<Context>().ToSelf().InRequestScope();
         }        
     }
 }
