@@ -51,8 +51,12 @@
     <div class="panel-footer">Panel footer</div>
 </div>
 
+<button onclick="click()">Clickar</button>
+
 @section scripts{
 
-    <script src="~/Scripts/require.js" data-main="/Scripts/App/app.js"></script>
+    @*<script src="~/Scripts/require.js" data-main="/Scripts/App/app.js"></script>*@
+    @*<script src="~/Scripts/App/Controllers/Cliente/ClienteController.js"></script>*@
+    <script src="~/Scripts/require.js" data-main="@Url.Content("~/Scripts/App/app.js")" defer></script>
 
 }

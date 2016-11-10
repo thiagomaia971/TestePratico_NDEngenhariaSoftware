@@ -1,12 +1,15 @@
-﻿import { UnitOfWork } from "../../Repositories/UnitOfWork";
+﻿﻿import { UnitOfWork } from "../../Repositories/UnitOfWork";
 import { Cliente } from "../../Entities/Cliente";
 
-export class ClienteController {
+class ClienteController {
+
     private unitOfWork: UnitOfWork;
 
     constructor() {
         this.unitOfWork = new UnitOfWork();
         this.carregarClientes();
+        console.log("carregou o CLienteController");
+       // this.unitOfWork = new UnitOfWork();
     }
     
     public carregarClientes(): void {
@@ -24,8 +27,8 @@ export class ClienteController {
                 let row: string = "";
                 row += `<tr>`
 
-                row += `<td>${cliente.nome}</td>`
-
+                row += `<td>${cliente.nome}</td>`;
+                
                 row += `</tr>`
             })
         }

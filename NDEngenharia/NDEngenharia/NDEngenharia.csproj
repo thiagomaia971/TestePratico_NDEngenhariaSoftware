@@ -267,9 +267,9 @@
     <Content Include="Scripts\App\Controllers\Cliente\ClienteController.js.map" />
     <Content Include="Scripts\App\Controllers\Cliente\ClienteHome.js.map" />
     <Content Include="Scripts\App\Entities\Cliente.js.map" />
-    <Content Include="Scripts\App\Repositories\ClienteRepository.js.map" />
     <Content Include="Scripts\App\Repositories\IRepository.js.map" />
     <Content Include="Scripts\App\Repositories\UnitOfWork.js.map" />
+    <Content Include="Scripts\App\Repositories\ClienteRepository.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
