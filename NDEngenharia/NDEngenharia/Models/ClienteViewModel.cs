@@ -18,5 +18,10 @@ namespace NDEngenharia.Models
         public string Telefone { get; set; }
 
         public EnderecoViewModel Endereco { get; set; }
+
+        public ClienteViewModel()
+        {
+            Endereco = new EnderecoViewModel();
+        }
     }
 }

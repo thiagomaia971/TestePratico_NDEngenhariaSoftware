@@ -13,7 +13,7 @@
 
     <div class="panel-body">
 
-        <section id="section-pesquisa">
+        <section id="section-pesquisa" style="padding: 10px">
 
             <div class="col-md-6 col-md-offset-3">
                 @Html.Label("Pesquisar pelo Nome", new { @for = "Nome" })
@@ -21,7 +21,7 @@
 
             </div>
 
-            <button class="btn btn-success" style="margin-top: 23px">
+            <button class="btn btn-success" style="margin-top: 25px" title="Novo Cliente" type="button" onclick="window.location.href='/Cliente/Novo'">
                 <span class="glyphicon glyphicon-plus"></span>
             </button>
 
@@ -29,33 +29,34 @@
 
     </div>
 
-    <table id="clientesTable" class="table">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Telefone</th>
-                <th>Logradouro</th>
-                <th>Numero</th>
-                <th>CEP</th>
-                <th>Referencia</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody id="clientesBody">
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <section style="padding: 15px">
 
+        <table id="clientesTable" class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Logradouro</th>
+                    <th>Numero</th>
+                    <th>CEP</th>
+                    <th>Referencia</th>
+                    <th class="text-center" style="width: 95px">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="clientesBody">
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
 
     <div class="panel-footer">Panel footer</div>
 </div>
 
 @section scripts{
 
-    @*<script src="~/Scripts/require.js" data-main="/Scripts/App/app.js"></script>*@
-    @*<script src="~/Scripts/App/Controllers/Cliente/ClienteController.js"></script>*@
     <script src="~/Scripts/require.js" data-main="@Url.Content("~/Scripts/App/app.js")" defer></script>
 
 }

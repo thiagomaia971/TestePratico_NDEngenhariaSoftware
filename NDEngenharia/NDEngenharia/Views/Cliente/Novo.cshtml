@@ -1,0 +1,98 @@
+﻿@model NDEngenharia.Models.ClienteViewModel
+@{
+    ViewBag.Title = "NovoCliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <h4>Cadastro de Cliente</h4>
+    </div>
+
+    @using (Html.BeginForm("Registrar", "Cliente", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.Id)
+
+        <div class="panel-body">
+
+            <fieldset class="col-md-12">
+
+                <legend>Dados Pessoais</legend>
+
+                <div class="row">
+
+                    <div class="form-group col-md-8">
+                        @Html.LabelFor(m => m.Nome)
+                        @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Nome)
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        @Html.LabelFor(m => m.Telefone)
+                        @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Telefone)
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+            <fieldset class="col-md-12">
+
+                <legend>Endereço</legend>
+
+                <div class="row">
+
+                    <div class="form-group col-md-6">
+                        @Html.LabelFor(m => m.Endereco.Logradouro)
+                        @Html.TextBoxFor(m => m.Endereco.Logradouro, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Endereco.Logradouro)
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        @Html.LabelFor(m => m.Endereco.Numero)
+                        @Html.TextBoxFor(m => m.Endereco.Numero, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Endereco.Numero)
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        @Html.LabelFor(m => m.Endereco.CEP)
+                        @Html.TextBoxFor(m => m.Endereco.CEP, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Endereco.CEP)
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-md-12">
+                        @Html.LabelFor(m => m.Endereco.Referencia)
+                        @Html.TextBoxFor(m => m.Endereco.Referencia, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Endereco.Referencia)
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+
+        </div>
+
+        <div class="panel-footer">
+
+            <button class="btn btn-danger" onclick="window.location.href='/Cliente/Index'" type="button">
+                <span class="glyphicon glyphicon-chevron-left"> Voltar</span>
+            </button>
+
+            <button class="btn btn-success">
+                <span class="glyphicon glyphicon-floppy-disk"> Registrar</span>
+            </button>
+
+        </div>
+
+    }
+
+</div>

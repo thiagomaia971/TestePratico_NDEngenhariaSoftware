@@ -327,6 +327,7 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="tsconfig.json" />
+    <Content Include="Views\Cliente\Novo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

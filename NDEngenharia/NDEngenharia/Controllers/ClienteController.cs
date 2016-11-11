@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NDEngenharia.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,5 +15,25 @@ namespace NDEngenharia.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Novo()
+        {
+
+            var clienteVM = new ClienteViewModel();
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Registrar(ClienteViewModel clienteVM)
+        {
+
+
+
+            return RedirectToAction("Index");
+        }
+
     }
 }
