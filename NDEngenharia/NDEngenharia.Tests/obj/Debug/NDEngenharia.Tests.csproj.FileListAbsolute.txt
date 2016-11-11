@@ -133,3 +133,5 @@ C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\N
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Tests\bin\Debug\Ninject.Web.Common.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Tests\bin\Debug\Ninject.xml
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Tests\bin\Debug\NDEngenharia.Infra.pdb
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Tests\bin\Debug\AutoMapper.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Tests\bin\Debug\AutoMapper.xml

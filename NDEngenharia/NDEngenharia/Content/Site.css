@@ -15,3 +15,7 @@
 .dl-horizontal dt {
     white-space: normal;
 }
+
+.validation-summary-valid.alert.alert-danger{
+    display: none;
+}

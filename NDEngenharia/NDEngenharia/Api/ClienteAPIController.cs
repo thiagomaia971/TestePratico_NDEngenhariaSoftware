@@ -60,7 +60,7 @@ namespace NDEngenharia.Api
 
                 return Ok(clienteVM);
             }
-            catch (RoleViolationException e)
+            catch (RuleViolationException e)
             {
                 return Content(HttpStatusCode.BadRequest, new
                 {

@@ -18,13 +18,16 @@ namespace NDEngenharia.Core.Entities
 
         private Cliente()
         {
-
+            this.Telefone = "";
         }
 
-        public Cliente(string Nome, string Telefone, string Logradouro, string Numero, string CEP, string Referencia)
+        public Cliente(string Nome, string Telefone, string Logradouro, string Numero, string CEP, string Referencia) : this()
         {
             this.Nome = Nome;
-            this.Telefone = Telefone;
+
+            if (!string.IsNullOrEmpty(Telefone))
+                this.Telefone = Telefone;
+
             this.Endereco = new Endereco(Logradouro, Numero, CEP, Referencia);
 
             this.ValidarEntity();
@@ -35,16 +38,15 @@ namespace NDEngenharia.Core.Entities
 
             // Verificando Nome
             if (string.IsNullOrEmpty(this.Nome))
-                throw new RoleViolationException("Nome do cliente é obrigatório", "Nome");
+                throw new RuleViolationException("Nome do cliente é obrigatório", "Nome");
             if (!(this.Nome.Length > 0 && this.Nome.Length < 101))
-                throw new RoleViolationException("Nome do cliente deve conter entre 0 e 100 caracteres", "Nome");
+                throw new RuleViolationException("Nome do cliente deve conter entre 0 e 100 caracteres", "Nome");
 
             // Verificando Telefone
-            if (string.IsNullOrEmpty(Telefone) && Telefone.Length < 13 && Telefone.Length > 14 )
-                throw new RoleViolationException("Telefone do cliente deve conter 15 caracteres", "Telefone");
-
+            if ( Telefone.Length != 0 && (Telefone.Length < 14 || Telefone.Length > 15))
+                throw new RuleViolationException("Telefone do cliente deve conter 15 caracteres", "Telefone");
+            
             this.Endereco.ValidarEntity();
-
         }
     }
 }

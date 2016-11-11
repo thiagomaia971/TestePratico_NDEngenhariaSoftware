@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Endereco.cs" />
-    <Compile Include="Exceptions\RoleViolationException.cs" />
+    <Compile Include="Exceptions\RuleViolationException.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IClienteRepository.cs" />

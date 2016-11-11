@@ -15,21 +15,21 @@ namespace NDEngenharia.Tests.Core
     public class ClienteTeste
     {
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
+        [ExpectedException(typeof(RuleViolationException))]
         public void CriarUmClienteSemNome_DeveRetornarUmaRoleViolationException()
         {
             // Arrange
             Cliente cliente;
 
             // Act
-            cliente = new Cliente(null, "(85) 99728-6590", "Rua Três", "131", "60.841-480", "Perto do habbibs");
+            cliente = new Cliente(null, "(85) 99728-6590", "Rua Três", "131", "60.41-480", "Perto do habbibs");
 
             // Assert
             
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
+        [ExpectedException(typeof(RuleViolationException))]
         public void CriarUmClienteComNumeroDeCaracteresDoTelefoneErrado_DeveRetornarUmaRoleViolationException()
         {
             // Arrange
@@ -43,7 +43,7 @@ namespace NDEngenharia.Tests.Core
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
+        [ExpectedException(typeof(RuleViolationException))]
         public void CriarUmClienteComNumeroDeCaracteresDoCEPErrado_DeveRetornarUmaRoleViolationException()
         {
             // Arrange
@@ -57,7 +57,6 @@ namespace NDEngenharia.Tests.Core
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
         public void CriarUmClienteSemCEP_DeveCriar()
         {
             // Arrange
@@ -71,14 +70,13 @@ namespace NDEngenharia.Tests.Core
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
         public void CriarUmClienteSemTelefone_DeveCriar()
         {
             // Arrange
             Cliente cliente;
 
             // Act
-            cliente = new Cliente("Cliente", null, "Rua Três", "131", "60.841-48", "Perto do habbibs");
+            cliente = new Cliente("Cliente", null, "Rua Três", "131", "60.841-480", "Perto do habbibs");
 
             // Assert
 
@@ -86,14 +84,26 @@ namespace NDEngenharia.Tests.Core
 
 
         [TestMethod]
-        [ExpectedException(typeof(RoleViolationException))]
         public void CriarUmClienteSemReferencia_DeveCriar()
         {
             // Arrange
             Cliente cliente;
 
             // Act
-            cliente = new Cliente("Cliente", "(85) 99728-6590", "Rua Três", "131", "60.841-48", null);
+            cliente = new Cliente("Cliente", "(85) 99728-6590", "Rua Três", "131", "60.841-480", null);
+
+            // Assert
+
+        }
+
+        [TestMethod]
+        public void CirarUmClienteApenasComONome_DeveCriar()
+        {
+            // Arrange
+            Cliente cliente;
+
+            // Act
+            cliente = new Cliente("Cliente", null, null, null, null, null);
 
             // Assert
 

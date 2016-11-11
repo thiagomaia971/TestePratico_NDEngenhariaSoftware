@@ -21,6 +21,7 @@ namespace NDEngenharia.Models
 
         public ClienteViewModel()
         {
+            this.Telefone = " ";
             Endereco = new EnderecoViewModel();
         }
     }

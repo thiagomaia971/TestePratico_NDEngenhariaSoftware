@@ -17,6 +17,8 @@
 
         <div class="panel-body">
 
+            @Html.ValidationSummary(false, string.Empty, new { @class = "alert alert-danger" })
+
             <fieldset class="col-md-12">
 
                 <legend>Dados Pessoais</legend>
@@ -26,13 +28,13 @@
                     <div class="form-group col-md-8">
                         @Html.LabelFor(m => m.Nome)
                         @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Nome)
+                        @*@Html.ValidationMessageFor(m => m.Nome)*@
                     </div>
 
                     <div class="form-group col-md-4">
                         @Html.LabelFor(m => m.Telefone)
                         @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Telefone)
+                        @*@Html.ValidationMessageFor(m => m.Telefone)*@
                     </div>
 
                 </div>
@@ -48,19 +50,19 @@
                     <div class="form-group col-md-6">
                         @Html.LabelFor(m => m.Endereco.Logradouro)
                         @Html.TextBoxFor(m => m.Endereco.Logradouro, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Endereco.Logradouro)
+                        @*@Html.ValidationMessageFor(m => m.Endereco.Logradouro)*@
                     </div>
 
                     <div class="form-group col-md-4">
                         @Html.LabelFor(m => m.Endereco.Numero)
                         @Html.TextBoxFor(m => m.Endereco.Numero, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Endereco.Numero)
+                        @*@Html.ValidationMessageFor(m => m.Endereco.Numero)*@
                     </div>
 
                     <div class="form-group col-md-2">
                         @Html.LabelFor(m => m.Endereco.CEP)
                         @Html.TextBoxFor(m => m.Endereco.CEP, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Endereco.CEP)
+                        @*@Html.ValidationMessageFor(m => m.Endereco.CEP)*@
                     </div>
 
                 </div>
@@ -70,7 +72,7 @@
                     <div class="form-group col-md-12">
                         @Html.LabelFor(m => m.Endereco.Referencia)
                         @Html.TextBoxFor(m => m.Endereco.Referencia, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Endereco.Referencia)
+                        @*@Html.ValidationMessageFor(m => m.Endereco.Referencia)*@
                     </div>
 
                 </div>

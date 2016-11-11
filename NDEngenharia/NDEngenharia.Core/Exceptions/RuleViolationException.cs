@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace NDEngenharia.Core.Exceptions
 {
-    public class RoleViolationException : Exception
+    public class RuleViolationException : Exception
     {
 
         public string PropertyNameExcepted { get; set; }
 
-        public RoleViolationException(string message, string propertyNameExcepted) : base(message)
+        public RuleViolationException(string message, string propertyNameExcepted) : base(message)
         {
             this.PropertyNameExcepted = propertyNameExcepted;
         }
+        
     }
 }
