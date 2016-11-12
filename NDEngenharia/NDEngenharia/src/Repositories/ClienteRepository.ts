@@ -32,14 +32,26 @@ export class ClienteRepository {
         });
     }
 
-    public add(cliente: Cliente): JQueryPromise<Cliente> {
-        let _url: string= `${this.url}/Cliente/Criar`;
+    public add(clienteVM: Cliente): JQueryPromise<Cliente> {
+        let _url: string = `${this.url}/Cliente/Criar`;
+
+        console.log(JSON.stringify(clienteVM));
 
         return $.ajax({
             method: "POST",
             url: _url,
-            data: { cliente }
+            contentType: "application/json",
+            data: JSON.stringify(clienteVM)
         })
+    }
+
+    public delete(clienteId: number): JQueryPromise<Cliente> {
+        let _url: string = `${this.url}/Cliente/Deletar/${clienteId}`;
+
+        return $.ajax({
+            method: "GET",
+            url: _url
+        });
     }
 
 }

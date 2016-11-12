@@ -50,6 +50,9 @@ namespace NDEngenharia.Infra.EntityTypeConfigurations
                 .HasColumnName("Referencia")
                 .HasMaxLength(250);
 
+            Ignore(x => x.RuleViolations);
+            //Ignore(x => x.Endereco.RuleViolations);
+
         }
     }
 }

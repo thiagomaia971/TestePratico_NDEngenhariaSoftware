@@ -1,6 +1,6 @@
 ﻿export class Endereco {
-    public logradouro: string;
-    public numero: string;
-    public cep: string;
-    public referencia: string;
+    public Logradouro: string;
+    public Numero: string;
+    public CEP: string;
+    public Referencia: string;
 }

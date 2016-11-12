@@ -20,12 +20,21 @@ define(["require", "exports"], function (require, exports) {
                 data: { id: id }
             });
         };
-        ClienteRepository.prototype.add = function (cliente) {
+        ClienteRepository.prototype.add = function (clienteVM) {
             var _url = this.url + "/Cliente/Criar";
+            console.log(JSON.stringify(clienteVM));
             return $.ajax({
                 method: "POST",
                 url: _url,
-                data: { cliente: cliente }
+                contentType: "application/json",
+                data: JSON.stringify(clienteVM)
+            });
+        };
+        ClienteRepository.prototype.delete = function (clienteId) {
+            var _url = this.url + "/Cliente/Deletar/" + clienteId;
+            return $.ajax({
+                method: "GET",
+                url: _url
             });
         };
         return ClienteRepository;

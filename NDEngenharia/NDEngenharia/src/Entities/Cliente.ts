@@ -1,8 +1,8 @@
 ﻿import { Endereco } from "./Endereco";
 
 export class Cliente {
-    public id: number;
-    public nome: string;
-    public telefone: string;
-    public endereco: Endereco;
+    public Id: number;
+    public Nome: string;
+    public Telefone: string;
+    public Endereco: Endereco;
 }

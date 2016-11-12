@@ -6,3 +6,4 @@ C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\N
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\bin\Debug\NDEngenharia.Core.pdb
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\obj\Debug\NDEngenharia.Core.dll
 C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\obj\Debug\NDEngenharia.Core.pdb
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Core\obj\Debug\NDEngenharia.Core.csprojResolveAssemblyReference.cache

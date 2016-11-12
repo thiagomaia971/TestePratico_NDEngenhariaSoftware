@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NDEngenharia.Core.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,11 @@ namespace NDEngenharia.Core.Exceptions
     public class RuleViolationException : Exception
     {
 
-        public string PropertyNameExcepted { get; set; }
+        public ICollection<RuleViolation> RuleViolations { get; set; }
 
-        public RuleViolationException(string message, string propertyNameExcepted) : base(message)
+        public RuleViolationException(ICollection<RuleViolation> RuleViolations)
         {
-            this.PropertyNameExcepted = propertyNameExcepted;
+            this.RuleViolations = RuleViolations;
         }
         
     }

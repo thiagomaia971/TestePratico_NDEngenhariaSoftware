@@ -16,7 +16,9 @@
         @Html.HiddenFor(m => m.Id)
 
         <div class="panel-body">
+            <div id="mensagem">
 
+            </div>
             @Html.ValidationSummary(false, string.Empty, new { @class = "alert alert-danger" })
 
             <fieldset class="col-md-12">
@@ -33,7 +35,7 @@
 
                     <div class="form-group col-md-4">
                         @Html.LabelFor(m => m.Telefone)
-                        @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control masked-telefone" })
                         @*@Html.ValidationMessageFor(m => m.Telefone)*@
                     </div>
 
@@ -61,7 +63,7 @@
 
                     <div class="form-group col-md-2">
                         @Html.LabelFor(m => m.Endereco.CEP)
-                        @Html.TextBoxFor(m => m.Endereco.CEP, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.Endereco.CEP, new { @class = "form-control masked-cep" })
                         @*@Html.ValidationMessageFor(m => m.Endereco.CEP)*@
                     </div>
 
@@ -89,7 +91,7 @@
                 <span class="glyphicon glyphicon-chevron-left"> Voltar</span>
             </button>
 
-            <button class="btn btn-success">
+            <button class="btn btn-success" id="cadastrar" type="button">
                 <span class="glyphicon glyphicon-floppy-disk"> Registrar</span>
             </button>
 
@@ -98,3 +100,9 @@
     }
 
 </div>
+
+@section scripts{
+
+    <script src="~/Scripts/require.js" data-main="@Url.Content("~/Scripts/App/Controllers/Cliente/CadastroApp.js")" defer></script>
+    @Scripts.Render("~/Scripts/App/Utils/MaskedOptions.js")
+}

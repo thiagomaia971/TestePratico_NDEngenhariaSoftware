@@ -259,12 +259,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\Controllers\Cliente\ClienteController.js" />
     <Content Include="Scripts\App\Controllers\Cliente\ClienteHome.js" />
     <Content Include="Scripts\App\Entities\Cliente.js" />
     <Content Include="Scripts\App\Repositories\ClienteRepository.js" />
     <Content Include="Scripts\App\Repositories\IRepository.js" />
     <Content Include="Scripts\App\Repositories\UnitOfWork.js" />
+    <Content Include="Scripts\App\Utils\MaskedOptions.js" />
+    <Content Include="Scripts\App\Utils\RuleViolation.js" />
+    <Content Include="Scripts\App\Utils\RuleViolationBuilder.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -276,6 +280,9 @@
     <Content Include="Scripts\App\Repositories\IRepository.js.map" />
     <Content Include="Scripts\App\Repositories\UnitOfWork.js.map" />
     <Content Include="Scripts\App\Repositories\ClienteRepository.js.map" />
+    <Content Include="Scripts\App\Utils\RuleViolation.js.map" />
+    <Content Include="Scripts\App\Utils\RuleViolationBuilder.js.map" />
+    <Content Include="Scripts\App\app.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -289,6 +296,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MaskedInputPlugin.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require-setup.js" />
@@ -363,12 +371,15 @@
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\Controllers\Cliente\CadastroApp.ts" />
     <TypeScriptCompile Include="src\Controllers\Cliente\ClienteController.ts" />
     <TypeScriptCompile Include="src\Entities\Cliente.ts" />
     <TypeScriptCompile Include="src\Entities\Endereco.ts" />
     <TypeScriptCompile Include="src\Repositories\ClienteRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\IRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\UnitOfWork.ts" />
+    <TypeScriptCompile Include="src\Utils\RuleViolation.ts" />
+    <TypeScriptCompile Include="src\Utils\RuleViolationBuilder.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
