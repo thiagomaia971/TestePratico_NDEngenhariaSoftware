@@ -1,14 +1,10 @@
 ﻿@model NDEngenharia.Models.ClienteViewModel
 @{
-    ViewBag.Title = "NovoCliente";
+    ViewBag.Title = "Cliente";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="panel panel-primary">
-
-    <div class="panel-heading">
-        <h4>Cadastro de Cliente</h4>
-    </div>
 
     @using (Html.BeginForm("Registrar", "Cliente", FormMethod.Post))
     {

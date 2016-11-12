@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Web.Http;
 
 namespace NDEngenharia.Api
-{
+{// LOCALHOSt://api/Cliente/Todos
     [AllowAnonymous]
     public class ClienteAPIController : ApiController
     {

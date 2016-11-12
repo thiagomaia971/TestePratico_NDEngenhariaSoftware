@@ -1,4 +1,4 @@
-define(["require", "exports", "../../Repositories/UnitOfWork", "../../Utils/RuleViolationBuilder"], function (require, exports, UnitOfWork_1, RuleViolationBuilder_1) {
+define(["require", "exports", "../../Repositories/UnitOfWork", "../../Utils/Loading", "../../Utils/RuleViolationBuilder"], function (require, exports, UnitOfWork_1, Loading_1, RuleViolationBuilder_1) {
     "use strict";
     var ClienteController = (function () {
         function ClienteController() {
@@ -8,16 +8,19 @@ define(["require", "exports", "../../Repositories/UnitOfWork", "../../Utils/Rule
         }
         ClienteController.prototype.carregarClientes = function () {
             var _this = this;
-            this.unitOfWork.Clientes.getAllByName(this.nameSearch)
-                .done(function (clientes) {
-                _this.todosClientes = clientes;
-                _this.montarBodyTable();
-            })
-                .fail(function (error) {
-                if (error.status === 404) {
-                    $("#clientesBody").html("<tr><td class='text-center' colspan='7'><b>Nenhum cliente cadastrado</b></td></tr>");
-                }
-            });
+            $("#clientesBody").html("<tr><td colspan='7'> <div class='center fill-horizontal padding'> " + Loading_1.Loading.getLoading() + "</div></td></tr>");
+            setTimeout(function () {
+                _this.unitOfWork.Clientes.getAllByName(_this.nameSearch)
+                    .done(function (clientes) {
+                    _this.todosClientes = clientes;
+                    _this.montarBodyTable();
+                })
+                    .fail(function (error) {
+                    if (error.status === 404) {
+                        $("#clientesBody").html("<tr><td class='text-center' colspan='7'><b>Nenhum cliente cadastrado</b></td></tr>");
+                    }
+                });
+            }, 1000);
         };
         ClienteController.prototype.adicionarCliente = function (cliente) {
             this.unitOfWork.Clientes.add(cliente)

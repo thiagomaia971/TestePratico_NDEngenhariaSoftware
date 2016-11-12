@@ -11,6 +11,7 @@ namespace NDEngenharia.Core.Entities
 {
     public class Endereco : IEntity
     {
+
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string CEP { get; set; }

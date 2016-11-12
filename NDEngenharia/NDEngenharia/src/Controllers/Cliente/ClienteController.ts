@@ -1,5 +1,6 @@
 ﻿﻿import { UnitOfWork } from "../../Repositories/UnitOfWork";
 import { Cliente } from "../../Entities/Cliente";
+import { Loading } from "../../Utils/Loading";
 import { RuleViolationBuilder } from "../../Utils/RuleViolationBuilder";
 
 export class ClienteController {
@@ -15,17 +16,22 @@ export class ClienteController {
 
     public carregarClientes(): void {
 
-        this.unitOfWork.Clientes.getAllByName(this.nameSearch)
-            .done((clientes) => {
-                this.todosClientes = clientes;
-                this.montarBodyTable();
-            })
-            .fail((error) => {
-                if (error.status === 404) {
-                    $("#clientesBody").html("<tr><td class='text-center' colspan='7'><b>Nenhum cliente cadastrado</b></td></tr>");
+        $("#clientesBody").html(`<tr><td colspan='7'> <div class='center fill-horizontal padding'> ${Loading.getLoading()}</div></td></tr>`);
 
-                }
-            });
+        setTimeout(() => {
+            this.unitOfWork.Clientes.getAllByName(this.nameSearch)
+                .done((clientes) => {
+                    this.todosClientes = clientes;
+                    this.montarBodyTable();
+                })
+                .fail((error) => {
+                    if (error.status === 404) {
+                        $("#clientesBody").html("<tr><td class='text-center' colspan='7'><b>Nenhum cliente cadastrado</b></td></tr>");
+
+                    }
+                });
+
+        }, 1000);
     }
 
     public adicionarCliente(cliente: Cliente): void {

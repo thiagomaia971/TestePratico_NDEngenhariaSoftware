@@ -378,6 +378,7 @@
     <TypeScriptCompile Include="src\Repositories\ClienteRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\IRepository.ts" />
     <TypeScriptCompile Include="src\Repositories\UnitOfWork.ts" />
+    <TypeScriptCompile Include="src\Utils\Loading.ts" />
     <TypeScriptCompile Include="src\Utils\RuleViolation.ts" />
     <TypeScriptCompile Include="src\Utils\RuleViolationBuilder.ts" />
   </ItemGroup>

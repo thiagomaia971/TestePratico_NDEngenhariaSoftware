@@ -5,7 +5,6 @@
     "sourceMap": true,
     "module": "amd",
     "target": "es5",
-    "module": "amd",
     "outDir": "./Scripts/App"
   },
   "include": [

@@ -2,7 +2,7 @@ define(["require", "exports", "./ClienteRepository"], function (require, exports
     "use strict";
     var UnitOfWork = (function () {
         function UnitOfWork() {
-            this._url = "http://localhost:61662/api";
+            this._url = "/api";
             this.Clientes = new ClienteRepository_1.ClienteRepository(this._url);
         }
         return UnitOfWork;

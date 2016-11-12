@@ -16,6 +16,35 @@
     white-space: normal;
 }
 
-.validation-summary-valid.alert.alert-danger{
+.validation-summary-valid.alert.alert-danger {
     display: none;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    border: solid 10px #428bca;
+    border-top-color: #FFF;
+    animation: spin 1s infinite linear;
+}
+
+.fill-horizontal {
+    width: 100%;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.center {
+    position: relative;
+    left: 50%;
 }
