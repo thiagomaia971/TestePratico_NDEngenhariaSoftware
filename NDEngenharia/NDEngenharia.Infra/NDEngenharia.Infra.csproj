@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92A885E6-7C25-445F-BFBE-82FBB90D6D4F}</ProjectGuid>
+    <ProjectGuid>{791782F8-D909-4C8C-B72C-5822E7ABC3C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NDEngenharia.Infra</RootNamespace>
@@ -51,9 +51,9 @@
   <ItemGroup>
     <Compile Include="Context.cs" />
     <Compile Include="EntityTypeConfigurations\ClienteEntityTypeConfiguration.cs" />
-    <Compile Include="Migrations\201611072108105_FirstMigration.cs" />
-    <Compile Include="Migrations\201611072108105_FirstMigration.Designer.cs">
-      <DependentUpon>201611072108105_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201611130336488_Inicio.cs" />
+    <Compile Include="Migrations\201611130336488_Inicio.Designer.cs">
+      <DependentUpon>201611130336488_Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,18 +62,18 @@
     <Compile Include="Repositories\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\NDEngenharia.Core\NDEngenharia.Core.csproj">
-      <Project>{6852B2D0-A6F3-4569-AFA6-073B1CB03F7E}</Project>
+      <Project>{48B1EA8F-6758-47DF-9957-A09E2F1AD393}</Project>
       <Name>NDEngenharia.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611072108105_FirstMigration.resx">
-      <DependentUpon>201611072108105_FirstMigration.cs</DependentUpon>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611130336488_Inicio.resx">
+      <DependentUpon>201611130336488_Inicio.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

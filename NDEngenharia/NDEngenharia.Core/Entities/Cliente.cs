@@ -18,8 +18,8 @@ namespace NDEngenharia.Core.Entities
         public Endereco Endereco { get; set; }
 
         public ICollection<RuleViolation> RuleViolations { get; set; }
-
-        private Cliente()
+        
+        public Cliente()
         {
             this.Telefone = "";
             this.RuleViolations = new List<RuleViolation>();

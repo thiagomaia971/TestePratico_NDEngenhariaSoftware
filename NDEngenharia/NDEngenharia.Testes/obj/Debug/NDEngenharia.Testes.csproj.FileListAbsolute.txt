@@ -1,0 +1,8 @@
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\obj\Debug\NDEngenharia.Testes.csprojResolveAssemblyReference.cache
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\bin\Debug\NDEngenharia.Testes.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\bin\Debug\NDEngenharia.Testes.pdb
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\bin\Debug\NDEngenharia.Core.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\bin\Debug\NDEngenharia.Core.pdb
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\obj\Debug\NDEngenharia.Testes.dll
+C:\Users\thiag\Documents\GitHub\TestePratico_NDEngenhariaSoftware\NDEngenharia\NDEngenharia.Testes\obj\Debug\NDEngenharia.Testes.pdb

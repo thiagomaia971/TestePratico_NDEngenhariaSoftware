@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "module": "amd",
+    "target": "es5",
+    "outDir": "./Scripts/App"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "files": [
+    
+  ],
+  "compileOnSave": true
+}

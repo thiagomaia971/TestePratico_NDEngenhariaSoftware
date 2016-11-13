@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6852B2D0-A6F3-4569-AFA6-073B1CB03F7E}</ProjectGuid>
+    <ProjectGuid>{48B1EA8F-6758-47DF-9957-A09E2F1AD393}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NDEngenharia.Core</RootNamespace>
