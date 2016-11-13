@@ -204,10 +204,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\NDEngenhariaDB-746328.mdf" />
-    <Content Include="App_Data\NDEngenhariaDB-746328_log.ldf">
-      <DependentUpon>NDEngenhariaDB-746328.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Readme\readme.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -294,6 +290,7 @@
     <Content Include="Views\Cliente\Novo.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
